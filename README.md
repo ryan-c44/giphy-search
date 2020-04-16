@@ -35,7 +35,7 @@ We're interested in learning what you think makes an app feel good to use. Pleas
 
 This is a take home test, that said don't spend hours perfecting every aspect of it, we'd like to see it back in 24 hours.
 
-## WHen you're done
+## When you're done
 
 Send it to hr@devika.com
 
@@ -65,9 +65,13 @@ To create a development build:
 npm run build-dev
 ```
 
-## Running
+### Running
 
-Open the file `dist/index.html` in your browser
+```sh
+npm run start
+```
+
+Visit the page via http://localhost:8080/
 
 ## Credits
 
