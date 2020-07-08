@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-const Title = props => 
+type TitleProps = {
+    title: string
+}
+
+const Title: FunctionComponent<TitleProps> = ({ title }) => <aside>
     <div className="title">
-        <h1>{props.name}</h1>
+        <h1>{title}</h1>
     </div>
+    </aside>
 
 
 export default Title;

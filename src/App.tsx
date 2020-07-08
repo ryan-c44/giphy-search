@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { render } from 'react-dom';
 import axios from 'axios';
 
 import SearchBar from './Components/Search';
@@ -17,7 +16,7 @@ class App extends React.Component<Props> {
   }
 
   xmlhr = query => {
-    axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=GOA8UpV7n9treflUv6UbEqvBU0qVy7vL`)
+    axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&limit=15&api_key=GOA8UpV7n9treflUv6UbEqvBU0qVy7vL`)
       .then(response => {
         this.setState({
           gifs: response.data.data
@@ -43,7 +42,7 @@ class App extends React.Component<Props> {
   render() {
     return (
       <div>
-        <Title name="GIPHY SEARCH" />
+        <Title title="GIPHY SEARCH" />
         <SearchBar searchGif={this.searchGif} />
         <GifDisplay gifs={this.state.gifs} />
       </div>

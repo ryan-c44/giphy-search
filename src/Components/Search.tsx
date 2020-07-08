@@ -1,7 +1,5 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import PropTypes from 'prop-types';
-
 import '../styles.scss';
 
 const SearchBar = props =>
