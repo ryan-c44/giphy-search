@@ -18,10 +18,9 @@ body {
 }
 
 .image-container {
-  width: 70%;
+  width: 90%;
+  max-width: 1025px;
   margin: auto;
-  border-top: 3px solid white;
-  padding: 10px;
 }
 
 .searchBar {
@@ -56,3 +55,32 @@ body {
   font-family: sans-serif;
   color: white;
 }
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  min-height: 80px;
+  z-index: 1000;
+}
+
+.inner,
+.main-content {
+  width: 90%;
+  max-width: 1025px;
+  margin: auto;
+}
+
+.main-title {
+  float: left;
+  color: #fff;
+}
+
+.search-form {
+  width: 422px;
+  float: right;
+  margin-top: 34px;
+}
+
